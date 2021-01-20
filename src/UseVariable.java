@@ -12,6 +12,7 @@ class UseVariable {
 
         boolean b1 = true;
         boolean b2 = false;
+
         System.out.println(num1<num2);
         System.out.println(num1>num2);
     }
