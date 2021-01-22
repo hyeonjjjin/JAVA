@@ -31,7 +31,7 @@ class UseVariable {
 
         System.out.println("show long literal "+3147483647L + 3147483648L);
 
-        int num_underbar = 12_34;
+        int num_under_bar = 12_34;
         System.out.println("num can use under_bar anywhere" +num_underbar);
 
 
