@@ -51,6 +51,19 @@ class UseVariable {
 
 
         //chapter 4
+        num1=7;num2=3;//int
+        System.out.println("int_num num1/num2 = "+(num1/num2));
+        System.out.println("real_num num1/num2 = "+(7.0/3.0));
+
+        //복합대입연산자
+        short num =10;
+        num=(short)(num+77L);//권장 형태
+        num+=77L;//권장하지 않음. JAVA가 알아서 형변환 해줘서 컴파일오류 안남
+
+        //bit shift 연산자 >>: 음(1),양수(0) 구분. >>>: 부호관계없이 빈공간은 0으로
+        System.out.println("-5(011) >> 1 :"+(-5>>1));
+        System.out.println("-5(011) >>> 1 :"+ (-5>>>1));//64bit 기준임
+
 
     }
 }
