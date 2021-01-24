@@ -1,5 +1,6 @@
 class UseVariable {
     public static void main(String[] args) {
+        System.out.println("chapter 2");
         //변수 선언
         int num1;
         num1 = 10;
@@ -15,10 +16,10 @@ class UseVariable {
         boolean b2 = false;
         System.out.println(num1 < num2);
         System.out.println(num1 > num2);
-        System.out.println();
 
 
         //chapter 3
+        System.out.println("\nchapter 3");
         final int MAX_SIZE = 100;//상수 이름은 대문자가 관례
         final int CONST_ASSIGNED;
         CONST_ASSIGNED = 200;
@@ -51,6 +52,7 @@ class UseVariable {
 
 
         //chapter 4
+        System.out.println("\nchapter 4");
         num1=7;num2=3;//int
         System.out.println("int_num num1/num2 = "+(num1/num2));
         System.out.println("real_num num1/num2 = "+(7.0/3.0));
@@ -63,6 +65,41 @@ class UseVariable {
         //bit shift 연산자 >>: 음(1),양수(0) 구분. >>>: 부호관계없이 빈공간은 0으로
         System.out.println("-5(011) >> 1 :"+(-5>>1));
         System.out.println("-5(011) >>> 1 :"+ (-5>>>1));//64bit 기준임
+
+
+        //chapter5
+        System.out.println("\nchapter 5");
+        if(5<7)
+            System.out.println("5<7 is true");
+        if(10<4)
+            System.out.println("10<4 is true?!");
+        else System.out.println("10<4 is false");
+
+        //조건 연산자
+        int t1orf0;
+        t1orf0 = (10>8) ? 1:0;
+        System.out.println("10>8 ? 1:0, result:"+t1orf0);
+
+        //switch, break
+        int n =7;
+        switch(n){
+            case 1:
+            case 2:
+            case 3:
+                System.out.println("case 1, 2, 3");
+                break;
+            default:
+                System.out.println("default");
+        }
+        //for, while, do-while
+        //break, continue 는 반복문에 대해 동작
+        int check=1;
+        while(true){
+            if(((check%6)==0)&&((check%14)==0))
+                break;
+            check++;
+        }
+        System.out.println("6과 14의 최소공배수: "+check);
 
 
     }
