@@ -101,6 +101,5 @@ class UseVariable {
         }
         System.out.println("6과 14의 최소공배수: "+check);
 
-
     }
 }
