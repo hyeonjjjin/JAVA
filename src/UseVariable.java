@@ -100,6 +100,22 @@ class UseVariable {
             check++;
         }
         System.out.println("6과 14의 최소공배수: "+check);
+        System.out.println();
 
+
+        //chapter 6. method
+        hiEveryone(23);
+        int mul_result = mul(6,9);
     }
+
+
+    //chapter 6. method
+    public static void hiEveryone(int age) {
+        System.out.println("졸린아침!");
+        System.out.println("나는 "+age+"살이야");
+    }
+    public static int mul(int a, int b){
+        return a*b;
+    }
+
 }
