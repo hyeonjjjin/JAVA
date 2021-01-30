@@ -106,6 +106,8 @@ class UseVariable {
         //chapter 6. method
         hiEveryone(23);
         int mul_result = mul(6,9);
+        System.out.println("4!="+factorial(4));
+
     }
 
 
@@ -118,4 +120,9 @@ class UseVariable {
         return a*b;
     }
 
+    //chapter 7. 재귀
+    public static int factorial(int n){
+        if(n==1) return 1;
+        else return n*factorial(n-1);
+    }
 }
