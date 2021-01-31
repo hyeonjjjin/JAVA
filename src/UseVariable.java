@@ -107,7 +107,7 @@ class UseVariable {
         hiEveryone(23);
         int mul_result = mul(6,9);
         System.out.println("4!="+factorial(4));
-
+        System.out.println("6!="+factorial(6));
     }
 
 
