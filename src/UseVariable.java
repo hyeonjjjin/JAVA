@@ -112,9 +112,9 @@ class UseVariable {
 
 
         //chapter 7-1. class
-        BankAccount ref1 = new BankAccount();
+        BankAccount ref1 = new BankAccount("12-56-89","999090-9990990",0);
         BankAccount ref2 = ref1;
-        BankAccount ref3 = new BankAccount();
+        BankAccount ref3 = new BankAccount("12-76-89","990990-9090990",0);
         ref1.deposit(3000);
         ref2.deposit(2000);
         ref3.deposit(4000);
@@ -125,6 +125,15 @@ class UseVariable {
         ref2.checkMyBalance();
         ref3.checkMyBalance();
         ref1=null;
+
+        //chapter 7-2. string
+        String str1 = "Happy";
+        String str2 = "Birthday";
+        System.out.println(str1+" "+str2);
+        printString(str1);
+        BankAccount yoon = new BankAccount("12-34-89","990990-9090990",1000);
+        //yoon.initAccount("12-34-89","990990-9090990",1000);//반드시 한번 호출되어야 하는 함수
+        //생성 후 자동으로 생성자가 호출되며 값 초기화시켜줘
 
     }
 
@@ -143,4 +152,11 @@ class UseVariable {
         if(n==1) return 1;
         else return n*factorial(n-1);
     }
+
+    //chapter 7-2. string
+    public static void printString(String str){
+        System.out.print(str);
+    }
+
+
 }
