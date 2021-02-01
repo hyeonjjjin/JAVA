@@ -108,10 +108,28 @@ class UseVariable {
         int mul_result = mul(6,9);
         System.out.println("4!="+factorial(4));
         System.out.println("6!="+factorial(6));
+        System.out.println();
+
+
+        //chapter 7-1. class
+        BankAccount ref1 = new BankAccount();
+        BankAccount ref2 = ref1;
+        BankAccount ref3 = new BankAccount();
+        ref1.deposit(3000);
+        ref2.deposit(2000);
+        ref3.deposit(4000);
+        ref1.withdraw(400);
+        ref3.withdraw(600);
+        if(ref1 != null)
+            ref1.checkMyBalance();
+        ref2.checkMyBalance();
+        ref3.checkMyBalance();
+        ref1=null;
+
     }
 
 
-    //chapter 6. method
+    //chapter 6-1. method
     public static void hiEveryone(int age) {
         System.out.println("졸린아침!");
         System.out.println("나는 "+age+"살이야");
@@ -120,7 +138,7 @@ class UseVariable {
         return a*b;
     }
 
-    //chapter 7. 재귀
+    //chapter 6-3. 재귀
     public static int factorial(int n){
         if(n==1) return 1;
         else return n*factorial(n-1);
