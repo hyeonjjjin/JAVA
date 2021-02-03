@@ -134,7 +134,15 @@ class UseVariable {
         BankAccount yoon = new BankAccount("12-34-89","990990-9090990",1000);
         //yoon.initAccount("12-34-89","990990-9090990",1000);//반드시 한번 호출되어야 하는 함수
         //생성 후 자동으로 생성자가 호출되며 값 초기화시켜줘
+        System.out.println();
 
+
+        //chapter 9-1
+        Circle2 c = new Circle2(1.5);
+        System.out.println("r=1.5, Area:"+c.getArea());
+
+        c.setRad(2.5);
+        System.out.println("r=2.5, Area:"+c.getArea());
     }
 
 
