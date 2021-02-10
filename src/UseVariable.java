@@ -141,7 +141,7 @@ class UseVariable {
         Circle2 c = new Circle2(1.5);
         System.out.println("r=1.5, Area:"+c.getArea());
 
-        c.setRad(2.5);
+        c.setRad(7.5);
         System.out.println("r=2.5, Area:"+c.getArea());
     }
 
