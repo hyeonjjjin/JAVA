@@ -136,7 +136,6 @@ class UseVariable {
         //생성 후 자동으로 생성자가 호출되며 값 초기화시켜줘
         System.out.println();
 
-
         //chapter 9-1
         Circle2 c = new Circle2(1.5);
         System.out.println("r=1.5, Area:"+c.getArea());
