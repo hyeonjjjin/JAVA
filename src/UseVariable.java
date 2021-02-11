@@ -162,6 +162,7 @@ class UseVariable {
 
     //chapter 7-2. string
     public static void printString(String str){
+
         System.out.print(str);
     }
 
