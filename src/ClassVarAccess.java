@@ -1,4 +1,5 @@
 //chapter 10-1
+//PI 처럼 바뀔 일 없고 어디에서나 일정한 값을 갖는 변수의 경우 static으로 사용하면 좋다. 대신 final 형태로!!
 class AccessWay{
     static int num =0;
 
