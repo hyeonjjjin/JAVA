@@ -1,5 +1,5 @@
 class UseVariable {
-    public static void main(String[] args) {
+    public static void d_main(String[] args) {
         System.out.println("chapter 2");
         //변수 선언
         int num1;
@@ -143,7 +143,7 @@ class UseVariable {
         c.setRad(7.5);
         System.out.println("r=2.5, Area:"+c.getArea());
 
-        //chapter 10-1
+
 
     }
 
