@@ -7,6 +7,15 @@ class AccessWay{
         num++;
     }
 }
+class InstCnt{
+    static int instNum = 100;
+
+    InstCnt(){
+        instNum++;
+        System.out.println("인스턴스 생성: "+instNum);
+    }
+}
+
 
 public class ClassVarAccess {
     public static void main(String[] args){
@@ -15,5 +24,9 @@ public class ClassVarAccess {
         System.out.println("num: "+way.num);
         AccessWay.num++;//여기서 ==3
         System.out.println("num: "+AccessWay.num);
+
+        InstCnt.instNum -=15;
+        System.out.println("인스턴스 선언 없이 값 접근만 했다면?! 계산된다?? : "+InstCnt.instNum);//초기화 되고 계산된다~
+
     }
 }
