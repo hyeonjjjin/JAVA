@@ -30,6 +30,7 @@ class SimpleCalculator{
     static final double PI =3.1415;
     static double add(double n1,double n2) {return n1+n2;}
     static double min(double n1,double n2) {return n1-n2;}
+    static double calCircleArea(double r){return PI*r*r;}
 }
 
 public class ClassVarAccess {
@@ -46,6 +47,7 @@ public class ClassVarAccess {
 
         //10-2
         NumberPrinter.showInt(20);//인스턴스 생성해서 접근하는 것 보다 이게 더 알아보기 좋음
+        NumberPrinter.showDouble(SimpleCalculator.calCircleArea(2.5));
 
     }
 }
