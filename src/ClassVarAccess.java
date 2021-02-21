@@ -49,5 +49,6 @@ public class ClassVarAccess {
         NumberPrinter.showInt(20);//인스턴스 생성해서 접근하는 것 보다 이게 더 알아보기 좋음
         NumberPrinter.showDouble(SimpleCalculator.calCircleArea(2.5));
 
+        //10-4
     }
 }
