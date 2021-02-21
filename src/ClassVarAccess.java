@@ -34,7 +34,7 @@ class SimpleCalculator{
 }
 
 public class ClassVarAccess {
-    public static void main(String[] args){
+    public static void main(String[] args){//public은 약속임. 외부에서 메인을 불러오기도 하고!
         //10-1
         AccessWay way = new AccessWay();//여기서 num==1
         way.num++;//여기서 ==2
