@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 //chapter 10-1, 10-2
 //PI 처럼 바뀔 일 없고 어디에서나 일정한 값을 갖는 변수의 경우 static으로 사용하면 좋다. 대신 final 형태로!!
 class AccessWay{
@@ -34,6 +36,12 @@ class SimpleCalculator{
 }
 
 public class ClassVarAccess {
+    //10-4
+    static String date;
+    static {
+        LocalDate nDate = LocalDate.now();
+        date = nDate.toString();
+    }
     public static void main(String[] args){//public은 약속임. 외부에서 메인을 불러오기도 하고!
         //10-1
         AccessWay way = new AccessWay();//여기서 num==1
@@ -50,5 +58,7 @@ public class ClassVarAccess {
         NumberPrinter.showDouble(SimpleCalculator.calCircleArea(2.5));
 
         //10-4
+        System.out.println(date);
+
     }
 }
