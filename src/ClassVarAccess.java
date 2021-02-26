@@ -58,7 +58,7 @@ public class ClassVarAccess {
         NumberPrinter.showDouble(SimpleCalculator.calCircleArea(2.5));
 
         //10-4
-        System.out.println(date);
+        System.out.println("오늘 날짜: "+date);
 
     }
 }
