@@ -37,7 +37,7 @@ class SimpleCalculator{
 
 public class ClassVarAccess {
     //10-4
-    static String date;
+    static String date;//씨에서 전역변수 쓰듯이 비슷한거ㅣ임
     static {
         LocalDate nDate = LocalDate.now();
         date = nDate.toString();
@@ -59,6 +59,5 @@ public class ClassVarAccess {
 
         //10-4
         System.out.println("오늘 날짜: "+date);
-
     }
 }
