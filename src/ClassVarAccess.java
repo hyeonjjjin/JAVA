@@ -34,7 +34,20 @@ class SimpleCalculator{
     static double min(double n1,double n2) {return n1-n2;}
     static double calCircleArea(double r){return PI*r*r;}
 }
+class Person{
+    private int regiNum;
+    private int passNum;
 
+    public Person(int rnum, int pnum) {
+        regiNum = rnum;
+        passNum = pnum;
+    }
+    public Person(int rnum){
+        this(rnum,0);
+    }
+    //이러면 초기화 함수를 두 개 만들 필요가 없어. pnum이 없는 경우엔 0을 주면서 초기화 함수로 넘어가니까
+
+}
 public class ClassVarAccess {
     //10-4
     static String date;//씨에서 전역변수 쓰듯이 비슷한거ㅣ임
@@ -45,8 +58,10 @@ public class ClassVarAccess {
 
     //11-1
     void simpleMethod(int n){n=1;}
-    void simpleMethod(int n1, int n2){n1=n2;}//엥이게 오류가 안나는구만..
+    void simpleMethod(int n1, double n2){n1=(int)n2;}//엥이게 오류가 안나는구만..
     //이름이랑 매개변수가 메소드 호출 시 확인되는 정보. 이름이 같아도 매개변수의 자료형이나 수가 다르면 다른걸로 인식함
+    //반환형은 조건이 아니야 그거는 달라도 구분 안돼 부를 땐 모르잖아
+
 
     public static void main(String[] args){//public은 약속임. 외부에서 메인을 불러오기도 하고!
         //10-1
