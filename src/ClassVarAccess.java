@@ -42,6 +42,12 @@ public class ClassVarAccess {
         LocalDate nDate = LocalDate.now();
         date = nDate.toString();
     }
+
+    //11-1
+    void simpleMethod(int n){n=1;}
+    void simpleMethod(int n1, int n2){n1=n2;}//엥이게 오류가 안나는구만..
+    //이름이랑 매개변수가 메소드 호출 시 확인되는 정보. 이름이 같아도 매개변수의 자료형이나 수가 다르면 다른걸로 인식함
+
     public static void main(String[] args){//public은 약속임. 외부에서 메인을 불러오기도 하고!
         //10-1
         AccessWay way = new AccessWay();//여기서 num==1
