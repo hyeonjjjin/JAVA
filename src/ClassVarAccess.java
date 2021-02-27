@@ -34,6 +34,7 @@ class SimpleCalculator{
     static double min(double n1,double n2) {return n1-n2;}
     static double calCircleArea(double r){return PI*r*r;}
 }
+//11-1 _2
 class Person{
     private int regiNum;
     private int passNum;
@@ -46,8 +47,15 @@ class Person{
         this(rnum,0);
     }
     //이러면 초기화 함수를 두 개 만들 필요가 없어. pnum이 없는 경우엔 0을 주면서 초기화 함수로 넘어가니까
-
 }
+//11-1 _3
+class SimpleBox{
+    private int data;
+    SimpleBox(int data){
+        this.data = data;//매개변수를 클래스 내 private 변수에 대입하는걸 의미함
+    }
+}
+
 public class ClassVarAccess {
     //10-4
     static String date;//씨에서 전역변수 쓰듯이 비슷한거ㅣ임
