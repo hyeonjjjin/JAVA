@@ -34,6 +34,7 @@ class SimpleCalculator{
     static double min(double n1,double n2) {return n1-n2;}
     static double calCircleArea(double r){return PI*r*r;}
 }
+
 //11-1 _2
 class Person{
     private int regiNum;
